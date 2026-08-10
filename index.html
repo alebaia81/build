@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONSTRUX — Impresa Edile di Lusso</title>
+  <meta name="description" content="CONSTRUX è un'impresa edile specializzata nella costruzione di residenze di lusso ed edifici su misura. Tra i costruttori più veloci ed efficienti al mondo.">
+  <meta property="og:title" content="CONSTRUX — Impresa Edile di Lusso">
+  <meta property="og:description" content="I costruttori più veloci ed efficienti per residenze di lusso e spazi commerciali su misura.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <span class="logo__icon" aria-hidden="true">
+          <span class="shape shape--1"></span>
+          <span class="shape shape--2"></span>
+        </span>
+        <span class="logo__text">CONSTRUX</span>
+      </a>
+
+      <!-- Desktop Nav Pill -->
+      <nav class="nav-pill" aria-label="Navigazione Principale">
+        <a href="#hero" class="nav-pill__link active">Home</a>
+        <a href="#projects" class="nav-pill__link">Progetti</a>
+        <a href="#services" class="nav-pill__link">Servizi</a>
+        <a href="#intro" class="nav-pill__link">Chi Siamo</a>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="header__actions">
+        <a href="#cta" class="header__start-link">Inizia un progetto</a>
+        <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE NAV ============ -->
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <div class="mobile-nav__inner">
+      <ul class="mobile-nav__list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Progetti</a></li>
+        <li><a href="#services">Servizi</a></li>
+        <li><a href="#intro">Chi Siamo</a></li>
+        <li><a href="#contact">Contatti</a></li>
+      </ul>
+      <div class="mobile-nav__contact">
+        <a href="mailto:hello@construx.com">hello@construx.com</a>
+        <a href="tel:077826126719">077826126719</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============ HERO BANNER ============ -->
+    <section class="hero-banner" id="hero">
+      <div class="hero-banner__bg">
+        <img src="assets/images/hero-build.png" alt="Cantiere Edile di Lusso CONSTRUX" loading="eager">
+        <div class="hero-banner__overlay"></div>
+      </div>
+
+      <div class="hero-banner__content">
+        <!-- Floating Hire Us Card -->
+        <div class="hire-card">
+          <h2 class="hire-card__title">Affidaci il tuo<br>prossimo progetto.</h2>
+          <a href="#cta" class="btn-book">
+            <span>Prenota ora</span>
+            <span class="arrow-box"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+
+        <!-- Operating Since Tag -->
+        <div class="operating-tag">
+          <span class="operating-tag__prefix">///</span>
+          <span class="operating-tag__text">IN ATTIVITÀ DAL<br>1912</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTRO SECTION (SUB-HERO) ============ -->
+    <section class="intro" id="intro">
+      <div class="intro__container">
+        <!-- Left Column -->
+        <div class="intro__left">
+          <span class="intro__tag">/// COSTRUZIONI DI LUSSO</span>
+          <h1 class="intro__headline">
+            I costruttori <span class="text-orange">più veloci</span> ed efficienti al mondo.
+          </h1>
+          <a href="#cta" class="btn-dark-about">
+            <span>Chi siamo</span>
+            <span class="arrow-box-dark"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+
+        <!-- Right Column -->
+        <div class="intro__right">
+          <div class="intro__image-wrapper">
+            <img src="assets/images/timber-frame.png" alt="Cantiere edile in legno" loading="lazy">
+          </div>
+          <p class="intro__description">
+            CONSTRUX è un'impresa edile specializzata nella realizzazione di residenze esclusive e immobili di pregio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE ============ -->
+    <section class="timeline" id="timeline">
+      <div class="timeline__slider">
+        <!-- Slide 1 -->
+        <div class="timeline__slide active" data-index="0">
+          <img src="assets/images/phase_1_foundation.png" alt="Fondazioni e scavi" class="timeline__media" loading="lazy">
+          <div class="timeline__slide-content">
+            <span class="timeline__label">/// TIMELINE TIPICA<br>DI COSTRUZIONE</span>
+            <h2 class="timeline__heading">Fondazioni<br>&amp; Scavi</h2>
+            <span class="timeline__duration">2 - 4 SETTIMANE</span>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="timeline__slide" data-index="1">
+          <img src="assets/images/phase_2_timber_framing.png" alt="Struttura e copertura" class="timeline__media" loading="lazy">
+          <div class="timeline__slide-content">
+            <span class="timeline__label">/// TIMELINE TIPICA<br>DI COSTRUZIONE</span>
+            <h2 class="timeline__heading">Struttura<br>&amp; Tetto</h2>
+            <span class="timeline__duration">4 - 8 SETTIMANE</span>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="timeline__slide" data-index="2">
+          <img src="assets/images/phase_3_exterior_cladding.png" alt="Interni, vetrate e finiture" class="timeline__media" loading="lazy">
+          <div class="timeline__slide-content">
+            <span class="timeline__label">/// TIMELINE TIPICA<br>DI COSTRUZIONE</span>
+            <h2 class="timeline__heading">Interni<br>&amp; Finiture</h2>
+            <span class="timeline__duration">6 - 10 SETTIMANE</span>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="timeline__slide" data-index="3">
+          <img src="assets/images/phase_4_final_landscaping.png" alt="Paesaggio ed esterni spettacolari" class="timeline__media" loading="lazy">
+          <div class="timeline__slide-content">
+            <span class="timeline__label">/// TIMELINE TIPICA<br>DI COSTRUZIONE</span>
+            <h2 class="timeline__heading">Paesaggio<br>&amp; Esterni</h2>
+            <span class="timeline__duration">2 - 4 SETTIMANE</span>
+          </div>
+        </div>
+      </div>
+      <!-- Progress bar -->
+      <div class="timeline__progress">
+        <button class="timeline__step active" data-step="0"><span class="step-num">01</span></button>
+        <div class="timeline__track"><div class="timeline__track-fill"></div></div>
+        <button class="timeline__step" data-step="1"><span class="step-num">02</span></button>
+        <div class="timeline__track"><div class="timeline__track-fill"></div></div>
+        <button class="timeline__step" data-step="2"><span class="step-num">03</span></button>
+        <div class="timeline__track"><div class="timeline__track-fill"></div></div>
+        <button class="timeline__step" data-step="3"><span class="step-num">04</span></button>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats" id="stats">
+      <div class="stats__grid">
+        <div class="stat-card">
+          <span class="stat-card__number" data-target="250">0</span><span class="stat-card__suffix">+</span>
+          <p class="stat-card__label">Progetti completati</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number" data-target="30">0</span><span class="stat-card__suffix">+</span>
+          <p class="stat-card__label">Anni di esperienza</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number" data-target="4.9">0</span><span class="stat-card__suffix"><svg class="star-icon" width="16" height="16" viewBox="0 0 16 16" fill="#FF5A1F"><path d="M8 0l2.47 4.94L16 5.76l-4 3.87.94 5.47L8 12.68 3.06 15.1 4 9.63 0 5.76l5.53-.82z"/></svg></span>
+          <p class="stat-card__label">Soddisfazione clienti</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__prefix">€</span><span class="stat-card__number" data-target="120">0</span><span class="stat-card__suffix">M+</span>
+          <p class="stat-card__label">Valore realizzato</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services">
+      <div class="services__grid">
+        <a href="#" class="service-card service-card--residential" id="service-residential">
+          <div class="service-card__sketch-container">
+            <img src="assets/images/sketch-residential.png" alt="Schizzo architettonico residenziale" class="service-card__sketch" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Residenziale</h3>
+            <div class="service-card__bottom">
+              <p class="service-card__text">Residenze su misura progettate e realizzate con maestria artigianale d'eccellenza.</p>
+              <span class="arrow-box"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="service-card service-card--commercial" id="service-commercial">
+          <div class="service-card__sketch-container">
+            <img src="assets/images/sketch-commercial.png" alt="Schizzo architettonico commerciale" class="service-card__sketch" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Commerciale</h3>
+            <div class="service-card__bottom">
+              <p class="service-card__text">Spazi commerciali ad alte prestazioni, consegnati nei tempi e costruiti per durare.</p>
+              <span class="arrow-box"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ RECENT PROJECTS ============ -->
+    <section class="projects" id="projects">
+      <div class="projects__header">
+        <span class="section-label">///</span>
+        <h2 class="section-title">PROGETTI<br>RECENTI</h2>
+      </div>
+      <div class="projects__grid">
+        <a href="#" class="project-card" id="project-casablanca">
+          <img src="assets/images/project-casablanca.png" alt="Progetto Villa Casablanca" loading="lazy">
+          <div class="project-card__footer">
+            <span class="project-card__name">Villa Casablanca</span>
+            <span class="arrow-box small"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+        <a href="#" class="project-card" id="project-abbots">
+          <img src="assets/images/project-abbots.png" alt="Progetto Residenza Abbots Lane" loading="lazy">
+          <div class="project-card__footer">
+            <span class="project-card__name">Residenza Abbots Lane</span>
+            <span class="arrow-box small"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" id="cta">
+      <div class="cta__inner">
+        <div class="cta__logo-shape" aria-hidden="true">
+          <div class="shape shape--1"></div>
+          <div class="shape shape--2"></div>
+          <div class="shape shape--3"></div>
+        </div>
+        <div class="cta__content">
+          <p class="cta__booking">CONSTRUX sta attualmente accettando<br>prenotazioni per i progetti del 2027</p>
+          <div class="cta__contact-info">
+            <a href="mailto:hello@construx.com">hello@construx.com</a>
+            <a href="tel:077826126719">077826126719</a>
+          </div>
+        </div>
+        <div class="cta__bottom">
+          <h2 class="cta__heading">Iniziamo il tuo progetto.</h2>
+          <a href="#contact" class="btn-book">
+            <span>Prenota ora</span>
+            <span class="arrow-box"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <div class="footer__logo-icon" aria-hidden="true">
+            <div class="shape shape--1"></div>
+            <div class="shape shape--2"></div>
+          </div>
+          <span class="footer__logo-text">CONSTRUX</span>
+        </div>
+        <p class="footer__copyright">&copy; 2027 Construx. Tutti i diritti riservati.</p>
+        <p class="footer__legal"><a href="#">Privacy</a> · <a href="#">Termini e Condizioni</a></p>
+      </div>
+      <div class="footer__col">
+        <h4>NAVIGAZIONE</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Progetti</a></li>
+          <li><a href="#services">Servizi</a></li>
+          <li><a href="#intro">Chi Siamo</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>SEGUICI</h4>
+        <ul>
+          <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="#" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="#" target="_blank" rel="noopener">X / Twitter</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>CONTATTI</h4>
+        <ul>
+          <li><a href="mailto:hello@construx.com">hello@construx.com</a></li>
+          <li><a href="tel:077826126719">077826126719</a></li>
+          <li>Via Montenapoleone 8,<br>Milano,<br>Italia</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
