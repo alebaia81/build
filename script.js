@@ -143,7 +143,7 @@ function initTimeline() {
 
   let currentIndex = 0;
   let autoplayTimer = null;
-  const DEFAULT_IMAGE_DELAY = 12000; // 12 seconds per slide
+  const DEFAULT_IMAGE_DELAY = 4500; // 4.5 seconds per slide
 
   function goToSlide(index) {
     // Clear any active autoplay timer
